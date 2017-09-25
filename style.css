@@ -1,0 +1,42 @@
+:root {
+  --base: #faa0a0;
+  --spacing: 10px;
+  --blur: 3px;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 95vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-height: 60vh;
+  max-width: 100%;
+  height: auto;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.highlight {
+  color: var(--base);
+}
